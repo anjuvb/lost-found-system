@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Admin Panel</h3>
+<table class="table">
+<tr><th>ID</th><th>Status</th></tr>
+{% for c in claims %}
+<tr>
+<td>{{ c.claim_id }}</td>
+<td>{{ c.claim_status }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
